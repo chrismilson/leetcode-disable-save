@@ -1,0 +1,12 @@
+{
+  "name": "Leetcode Disable Save",
+  "version": "0.0.1",
+  "description": "Disable the ctrl+s save command on Leetcode domains.",
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["disable-save.js"]
+    }
+  ],
+  "manifest_version": 2
+}
