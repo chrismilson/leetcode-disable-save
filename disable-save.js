@@ -3,10 +3,10 @@ var handler = (e) => {
     e.keyCode === 83 &&
     (e.getModifierState('Control') || e.getModifierState('Meta'))
   ) {
-    console.log('Cancelled Save.')
-    e.preventDefault()
-    e.stopPropagation()
+    console.log('Cancelled Save.');
+    e.preventDefault();
+    e.stopPropagation();
   }
-}
+};
 
-document.addEventListener('keydown', handler)
+document.addEventListener('keydown', handler);
